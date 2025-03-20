@@ -5,3 +5,11 @@
 # Count how many numbers are odd.
 
 # Print the count at the end.
+
+nums = [4, 7, 2, 9, 5]
+odd_count = 0
+
+for values in range(len(nums)):
+    if nums[values] % 2 != 0:
+        odd_count += 1
+print(odd_count)
