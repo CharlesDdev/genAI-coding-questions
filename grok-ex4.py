@@ -1,4 +1,4 @@
-# Question 5 (String Basics)
+# Question 4 (String Basics)
 # You have this string: name = "ALICE".
 # Write a line of code (no loop) to:
 # Print the string in all lowercase letters.
