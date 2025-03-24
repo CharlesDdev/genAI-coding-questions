@@ -11,3 +11,9 @@
 
 # is_all_caps("HI THERE") → True
 
+def is_all_caps(word):
+    for letters in word:
+        if letter.isalpya() and not letters.isupper(): # if its a letter and not uppercase
+            return False
+        else
+    return True #all letters passed the uppercase test
