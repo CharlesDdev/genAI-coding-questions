@@ -9,3 +9,9 @@
 
 # count_words("hi") → 1
 
+def count_words(string):
+    number_of_words = 1  # Start with 1 for the first word
+    for char in string:
+        if char == " ":  # Count spaces to separate words
+            number_of_words += 1
+    return number_of_words
