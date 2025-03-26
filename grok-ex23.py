@@ -7,3 +7,11 @@
 # add_first_last([5]) → 10 (5 + 5)
 
 # add_first_last([2, 4, 6, 8]) → 10 (2 + 8)
+
+def add_first_last(numberslist):
+    first = numberslist[0] # first number (no loop needed)
+    last = 0 # placeholder for last
+    for num in numberslist:
+        last = num
+    sum_of_eos = first + last # updates each time, keeps the last one
+    return sum_of_eos
