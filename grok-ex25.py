@@ -8,3 +8,10 @@
 # sum_positives([-1, -5]) → 0 (no positives)
 
 # sum_positives([2, 4, 6]) → 12 (2 + 4 + 6)
+
+def sum_positives(numslist):
+    sum_all_pos = 0
+    for num in numslist:
+        if num > 0:
+            sum_all_pos += num
+    return sum_all_pos
