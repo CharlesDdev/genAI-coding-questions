@@ -9,3 +9,20 @@
 # middle_char("python") → "t" (6 chars, middle is 3rd/4th, take 3rd)
 
 # middle_char("cat") → "a" (3 chars, middle is 2nd)
+
+def middle_char(words):
+    string_length = 0
+    for char in words:
+        string_length += 1 # counts length
+    if string_length == 0: # edge case
+        return ""
+    if string_length % 2 == 0:
+        middle_pos = (string_length // 2) - 1 # first of two middles
+    else:
+        middle_pos = string_length // 2 # exact middle
+    pos = 0
+    for char in words:
+        if pos == middle_pos:
+            return char
+        pos += 1
+    return ""
